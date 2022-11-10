@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_kspe_tipo_servicio">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>TIPO DE SERVICIO</name>
+  <customvalues>
+    <customvalue scriptid="val_23085990_4552646_sb1_668">
+      <isinactive>F</isinactive>
+      <value>FULL TIME</value>
+    </customvalue>
+    <customvalue scriptid="val_23085991_4552646_sb1_957">
+      <isinactive>F</isinactive>
+      <value>SPOT</value>
+    </customvalue>
+    <customvalue scriptid="val_23085992_4552646_sb1_818">
+      <isinactive>F</isinactive>
+      <value>INSPECCIÓN</value>
+    </customvalue>
+  </customvalues>
+</customlist>

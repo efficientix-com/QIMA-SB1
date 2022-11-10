@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_ks_tipo_cuenta">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>KS TIPO DE CUENTA</name>
+  <customvalues>
+    <customvalue scriptid="val_304346_t1307217_214">
+      <isinactive>F</isinactive>
+      <value>AHORROS</value>
+    </customvalue>
+    <customvalue scriptid="val_304347_t1307217_105">
+      <isinactive>F</isinactive>
+      <value>CORRIENTE</value>
+    </customvalue>
+  </customvalues>
+</customlist>

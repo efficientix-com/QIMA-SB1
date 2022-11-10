@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_ks_pe_tax_type">
+  <description>Tax Code Type: IGV or ISC</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>KS PE TAX TYPE</name>
+  <customvalues>
+    <customvalue scriptid="val_23767682_4552646_sb1_682">
+      <isinactive>F</isinactive>
+      <value>IGV</value>
+    </customvalue>
+    <customvalue scriptid="val_23767683_4552646_sb1_402">
+      <isinactive>F</isinactive>
+      <value>ISC</value>
+    </customvalue>
+  </customvalues>
+</customlist>

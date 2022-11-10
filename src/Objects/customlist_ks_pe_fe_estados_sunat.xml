@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_ks_pe_fe_estados_sunat">
+  <description>Lista de estados SUNAT</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>KS PE ESTADOS SUNAT</name>
+  <customvalues>
+    <customvalue scriptid="val_23063553_4552646_sb1_986">
+      <isinactive>F</isinactive>
+      <value>[PE_02] - Pendiente</value>
+    </customvalue>
+    <customvalue scriptid="val_23063554_4552646_sb1_560">
+      <isinactive>F</isinactive>
+      <value>[AC_03] - Aceptado</value>
+    </customvalue>
+    <customvalue scriptid="val_23063555_4552646_sb1_257">
+      <isinactive>F</isinactive>
+      <value>[RC_05] - Rechazado</value>
+    </customvalue>
+    <customvalue scriptid="val_23063556_4552646_sb1_219">
+      <isinactive>F</isinactive>
+      <value>[AN_04] - Anulado</value>
+    </customvalue>
+  </customvalues>
+</customlist>

@@ -1,0 +1,25 @@
+<centercategory scriptid="custcentercategory_ks_numberin">
+  <center>BASIC</center>
+  <centertab>BASICCENTERSETUP</centertab>
+  <label>KS Numbering</label>
+  <links>
+    <link>
+      <linklabel>Configuración de Consecutivos</linklabel>
+      <linkobject>[scriptid=customrecord_kis_serie_config]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Series / Tipos de Consecutivo</linklabel>
+      <linkobject>[scriptid=customrecord_kis_series]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Configurar Implementaciones SS</linklabel>
+      <linkobject>[scriptid=customscript_kis_cons_scheduled]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

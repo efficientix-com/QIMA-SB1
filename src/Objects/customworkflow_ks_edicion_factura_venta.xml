@@ -1,0 +1,41 @@
+<workflow scriptid="customworkflow_ks_edicion_factura_venta">
+  <description></description>
+  <initcontexts>ACTION|RECORDACTION|CUSTOMMASSUPDATE|FIPARSER|BANKSTATEMENTPARSER|MAPREDUCE|EMAILCAPTURE|CLIENT|OFFLINECLIENT|BANKCONNECTIVITY|FICONNECTIVITY|DEBUGGER|PLATFORMEXTENSION|WORKFLOW|ADVANCEDREVREC|CSVIMPORT|SDFINSTALLATION|BUNDLEINSTALLATION|USERINTERFACE|CUSTOMGLLINES|CONSOLRATEADJUSTOR|TAXCALCULATION|OTHER|DATASETBUILDER|WORKBOOKBUILDER|PORTLET|PAYMENTPOSTBACK|PAYMENTGATEWAY|PROMOTIONS|RESTLET|USEREVENT|SCHEDULED|RESTWEBSERVICES|WEBSERVICES|SHIPPINGPARTNERS|SUITELET</initcontexts>
+  <initeventtypes></initeventtypes>
+  <initlocalizationcontext>PE</initlocalizationcontext>
+  <initoncreate>F</initoncreate>
+  <initonvieworupdate>F</initonvieworupdate>
+  <initsavedsearchcondition></initsavedsearchcondition>
+  <inittriggertype></inittriggertype>
+  <isinactive>F</isinactive>
+  <islogenabled>F</islogenabled>
+  <keephistory>ALWAYS</keephistory>
+  <name>KS EDICIÓN FACTURA DE VENTA</name>
+  <recordtypes>INVOICE|CREDITMEMO</recordtypes>
+  <releasestatus>NOTINITIATING</releasestatus>
+  <runasadmin>F</runasadmin>
+  <initcondition>
+    <formula><![CDATA["Subsidiary (Main)" IN ("{#Subsidiary#}1")]]></formula>
+    <type>VISUAL_BUILDER</type>
+    <parameters>
+      <parameter>
+        <name>Subsidiary (Main)</name>
+        <value>STDBODYSUBSIDIARY</value>
+      </parameter>
+      <parameter>
+        <name>{#Subsidiary#}1</name>
+        <selectrecordtype>-117</selectrecordtype>
+        <value>[ACCOUNT_SPECIFIC_VALUE]</value>
+      </parameter>
+    </parameters>
+  </initcondition>
+  <workflowstates>
+    <workflowstate scriptid="workflowstate503">
+      <description></description>
+      <donotexitworkflow>F</donotexitworkflow>
+      <name>State 1</name>
+      <positionx>243</positionx>
+      <positiony>133</positiony>
+    </workflowstate>
+  </workflowstates>
+</workflow>

@@ -1,0 +1,202 @@
+<scheduledscript scriptid="customscript_ks_pe_scheduled_einvoicing">
+  <defaultfunction>ks_massive_einvoicng</defaultfunction>
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>KS ENVIO PERIODICO BIZLINKS</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteBundles/Bundle 212036/ks_massive_einvoicing_v2.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_ks_fe_simbolo_soles">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>TEXT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Simbolo Soles</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_ks_fe_simbolo_usd">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>TEXT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Simbolo Dolares</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_ks_fe_busqueda">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>TEXT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Busqueda Base</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_ks_subsidiary_pe">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>SELECT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Subsidiaria</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete>NO_ACTION</onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype>-117</selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ks_envio_periodico_21">
+      <custscript_ks_fe_busqueda>customsearch_ks_pe_invoices_pending_blin</custscript_ks_fe_busqueda>
+      <custscript_ks_fe_simbolo_soles>S/.</custscript_ks_fe_simbolo_soles>
+      <custscript_ks_fe_simbolo_usd>$</custscript_ks_fe_simbolo_usd>
+      <custscript_ks_subsidiary_pe>[ACCOUNT_SPECIFIC_VALUE]</custscript_ks_subsidiary_pe>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>SCHEDULED</status>
+      <title>KS ENVIO PERIODICO FE 2.1</title>
+      <recurrence>
+        <daily>
+          <everyxdays>1</everyxdays>
+          <repeat>PT15M</repeat>
+          <startdate>2017-10-30</startdate>
+          <starttime>16:30:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_ks_pe_consulta_comprobantes">
+      <custscript_ks_fe_busqueda>customsearch_ks_pe_fe_pending_docs</custscript_ks_fe_busqueda>
+      <custscript_ks_fe_simbolo_soles>S/.</custscript_ks_fe_simbolo_soles>
+      <custscript_ks_fe_simbolo_usd>$</custscript_ks_fe_simbolo_usd>
+      <custscript_ks_subsidiary_pe>[ACCOUNT_SPECIFIC_VALUE]</custscript_ks_subsidiary_pe>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>SCHEDULED</status>
+      <title>KS CONSULTA DE COMPROBANTES</title>
+      <recurrence>
+        <daily>
+          <everyxdays>1</everyxdays>
+          <repeat>PT15M</repeat>
+          <startdate>2022-08-08</startdate>
+          <starttime>16:30:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_ks_pe_consulta_rd">
+      <custscript_ks_fe_busqueda>customsearch_ks_rd_pending</custscript_ks_fe_busqueda>
+      <custscript_ks_fe_simbolo_soles>S/.</custscript_ks_fe_simbolo_soles>
+      <custscript_ks_fe_simbolo_usd>$</custscript_ks_fe_simbolo_usd>
+      <custscript_ks_subsidiary_pe>[ACCOUNT_SPECIFIC_VALUE]</custscript_ks_subsidiary_pe>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>SCHEDULED</status>
+      <title>KS CONSULTA DE RESUMEN DIARIO</title>
+      <recurrence>
+        <daily>
+          <everyxdays>1</everyxdays>
+          <repeat>PT1H</repeat>
+          <startdate>2022-08-09</startdate>
+          <starttime>01:00:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_ks_scheduled_einvoicing">
+      <custscript_ks_fe_busqueda>customsearch_ks_pe_invoices_pending_blin</custscript_ks_fe_busqueda>
+      <custscript_ks_fe_simbolo_soles>S/.</custscript_ks_fe_simbolo_soles>
+      <custscript_ks_fe_simbolo_usd>$</custscript_ks_fe_simbolo_usd>
+      <custscript_ks_subsidiary_pe>[ACCOUNT_SPECIFIC_VALUE]</custscript_ks_subsidiary_pe>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>SCHEDULED</status>
+      <title>KS ENVIO PERIODICO RESUMEN DIARIO</title>
+      <recurrence>
+        <daily>
+          <everyxdays>1</everyxdays>
+          <repeat>PT1H</repeat>
+          <startdate>2017-10-24</startdate>
+          <starttime>01:00:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+  <libraries>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 212036/ks_pe_core_v2.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 212036/ks_xmlCreator_update_v2.js]</scriptfile>
+    </library>
+  </libraries>
+</scheduledscript>

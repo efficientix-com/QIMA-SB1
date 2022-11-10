@@ -1,0 +1,18 @@
+<usereventscript scriptid="customscript_ks_atw_ue">
+  <aftersubmitfunction>KS_AWT_userEvent.afterSubmit</aftersubmitfunction>
+  <beforeloadfunction></beforeloadfunction>
+  <beforesubmitfunction></beforesubmitfunction>
+  <description></description>
+  <isinactive>T</isinactive>
+  <name>KS Amount To Words</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteBundles/Bundle 371307/KS Amoun To Words/KS_ATW_UserEventScript.js]</scriptfile>
+  <libraries>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 371307/KS Amoun To Words/KS_ATW_API.js]</scriptfile>
+    </library>
+  </libraries>
+</usereventscript>

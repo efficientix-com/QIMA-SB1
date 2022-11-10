@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_ks_atw_type_sentence">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>KS ATW Type Sentence</name>
+  <customvalues>
+    <customvalue scriptid="val_304389_t1307217_376">
+      <isinactive>F</isinactive>
+      <value>Uppercase</value>
+    </customvalue>
+    <customvalue scriptid="val_304390_t1307217_622">
+      <isinactive>F</isinactive>
+      <value>phrase case</value>
+    </customvalue>
+    <customvalue scriptid="val_304391_t1307217_580">
+      <isinactive>F</isinactive>
+      <value>Upper and Lower case</value>
+    </customvalue>
+  </customvalues>
+</customlist>

@@ -1,0 +1,13 @@
+<centercategory scriptid="custcentercategory_ks_pe_fac_ele">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_ks_pe_facturacionelec]</centertab>
+  <label>Facturación Electrónica</label>
+  <links>
+    <link>
+      <linklabel>Configuración Facturación Elec.</linklabel>
+      <linkobject>[scriptid=customsearch_ks_pe_as_fact_elect_script]</linkobject>
+      <linktasktype>SRCH_RSLT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

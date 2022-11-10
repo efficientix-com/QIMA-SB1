@@ -1,0 +1,12 @@
+<customlist scriptid="customlist_ks_atw_order_phrase">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>KS ATW  Order Phrase</name>
+  <customvalues>
+    <customvalue scriptid="val_307562_t1307217_840">
+      <isinactive>F</isinactive>
+      <value>cent between peso and coin</value>
+    </customvalue>
+  </customvalues>
+</customlist>

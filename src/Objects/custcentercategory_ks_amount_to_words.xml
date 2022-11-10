@@ -1,0 +1,13 @@
+<centercategory scriptid="custcentercategory_ks_amount_to_words">
+  <center>BASIC</center>
+  <centertab>BASICCENTERSETUP</centertab>
+  <label>KS Amount To Words</label>
+  <links>
+    <link>
+      <linklabel>Configuración</linklabel>
+      <linkobject>[scriptid=customrecord_ks_amount_to_words_config]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

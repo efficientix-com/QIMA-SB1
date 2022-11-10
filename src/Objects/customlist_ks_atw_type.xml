@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_ks_atw_type">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>KS Amount To Words Type</name>
+  <customvalues>
+    <customvalue scriptid="val_303961_t1307217_921">
+      <isinactive>F</isinactive>
+      <value>Number Cents</value>
+    </customvalue>
+    <customvalue scriptid="val_303962_t1307217_327">
+      <isinactive>F</isinactive>
+      <value>Word Cents</value>
+    </customvalue>
+  </customvalues>
+</customlist>
